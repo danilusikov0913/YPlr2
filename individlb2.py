@@ -1,4 +1,7 @@
-if __name__ == '__main__':
+# !/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+def main():
     def f(func):
         def g(b, chars=' !?'):
             tmp = ''.join(map(lambda x: x if x not in chars else '-', func(b)))
@@ -7,7 +10,6 @@ if __name__ == '__main__':
             return tmp
 
         return g
-
 
     @f
     def h(t):
@@ -20,3 +22,7 @@ if __name__ == '__main__':
     print('Введите текст:')
     a = input()
     print(h(a, chars='?!:;,. '))
+
+
+if __name__ == '__main__':
+    main()
