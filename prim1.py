@@ -1,3 +1,6 @@
+# !/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 def decorator_function(func):
     def wrapper():
         print('Функция-обёртка!')
